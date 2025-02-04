@@ -5,6 +5,8 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import TextField from '@mui/material/TextField';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 
 function Contact() {
   const [name, setName] = useState<string>('');
@@ -57,7 +59,21 @@ function Contact() {
             Got a project waiting to be realized? Let's collaborate and make it
             happen!
           </p>
-          <Box
+          <div className='contact-info'>
+            <a
+              href='mailto:contact@andersonlakwan.xyz'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <EmailIcon /> <span>contact@andersonlakwan.xyz</span>
+            </a>
+            <span> | </span>
+            <a href='tel:+18504623043' target='_blank' rel='noreferrer'>
+              <PhoneAndroidIcon />
+              <span>+1 (850) 462-3043</span>
+            </a>
+          </div>
+          {/* <Box
             ref={form}
             component='form'
             noValidate
@@ -114,7 +130,7 @@ function Contact() {
             >
               Send
             </Button>
-          </Box>
+          </Box> */}
         </div>
       </div>
     </div>
