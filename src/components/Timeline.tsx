@@ -29,7 +29,7 @@ function Timeline() {
             <h4 className='vertical-timeline-element-subtitle'>
               Truepill | Hayward, CA
             </h4>
-            <p>Full-End Development, Cotentful CMS, Web Accessibility,</p>
+            <p>Full-End Development, Cotentful CMS, Web Accessibility</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className='vertical-timeline-element--work'
